@@ -2,11 +2,12 @@
   "compilerOptions": {
     "allowJs": true, // 자바스크립트 파일을 타입스크립트에서 인식해서 그대로 씀
     "target": "ES5", // tsc(ts=>js)로 컴파일할 때 어느 버전으로 컴파일할지
-    "outDir": "./built", // 타입스크립트의 결과물이 어디에 들어갈 것인지
+    "outDir": "./dist", // 타입스크립트의 결과물이 어디에 들어갈 것인지
     "moduleResolution": "Node", // Promise 베이스의 코드를 작성할 때 Promise를 인식시키기 위해서
     "lib": ["ES2015", "DOM", "DOM.Iterable"],
     "noImplicitAny": true,
-    "typeRoots": ["./node_modules/@types", "./types"]
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "strict": true
   },
   "include": ["./src/**/*"] // 프로젝트를 기준으로 어떤 폴더를 대상으로 타입스크립트를 컴파일할 것인가
 }
